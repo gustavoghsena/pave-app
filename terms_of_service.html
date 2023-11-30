@@ -1,0 +1,676 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Pavê | Termos de Uso</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1f3569f0-a20d-4d7a-9225-5232d6234520" class="page sans"><header><h1 class="page-title">Pavê | Termos de Uso</h1><p class="page-description"></p></header><div class="page-body"><p id="44612bff-97f2-4dde-a8e1-f4687bdc7d3f" class="">Estes termos e condições delineiam as regras e regulamentos para o uso do Pavê.</p><p id="e8e53d05-bd36-429c-ab97-cd133a875efd" class="">Ao utilizar este aplicativo, assumimos que você concorda com estes termos e condições. Não prossiga com o uso do Pavê se você não concordar com todos os termos e condições declarados nesta página.</p><p id="9b88a852-5b0f-4d31-94ab-a92d25d2883f" class="">A terminologia a seguir se aplica a estes Termos e Condições, Declaração de Privacidade e Aviso de Isenção de Responsabilidade, e a todos os Acordos: &quot;Cliente&quot;, &quot;Você&quot; e &quot;Seu&quot; referem-se a você, a pessoa que acessa este aplicativo e está em conformidade com os termos e condições da Empresa. &quot;A Empresa&quot;, &quot;Nós&quot;, &quot;Nossos&quot; e &quot;Nosso&quot; referem-se à nossa Empresa. &quot;Parte&quot;, &quot;Partes&quot; ou &quot;Nós&quot; referem-se tanto ao Cliente quanto a nós. Todas as condições referem-se à oferta, aceitação e consideração de pagamento necessárias para realizar o processo de nossa assistência ao Cliente da maneira mais apropriada para atender às necessidades do Cliente em relação à prestação dos serviços declarados da Empresa, de acordo com e sujeito à legislação vigente nos Países Baixos. Qualquer uso da terminologia acima ou de outras palavras no singular, plural, em maiúsculas e/ou ele/ela ou eles, são considerados intercambiáveis e, portanto, como referindo-se ao mesmo. Nossos Termos e Condições foram criados com a ajuda do Gerador de Termos e Condições de Aplicativos do App-Privacy-Policy.com.</p><p id="0f5c85ce-0013-49fa-8faf-8c8b80724d31" class=""><strong>Licença:</strong></p><p id="a65949eb-6230-45b3-b2e6-ebd9e6ac1f4f" class="">Salvo disposição em contrário, o Pavê e/ou seus licenciadores detêm os direitos de propriedade intelectual de todo o material no Pavê. Todos os direitos de propriedade intelectual são reservados. Você pode acessar este material do Pavê apenas para seu uso pessoal, sujeito às restrições estabelecidas nestes termos e condições.</p><p id="c83b9c85-289e-4fb1-bc70-5ba11642511a" class="">Você não deve:</p><ul id="6a7bb6b8-0d6b-482d-beda-49733f58070e" class="bulleted-list"><li style="list-style-type:disc">Republicar material do Pavê.</li></ul><ul id="dd6e2d00-e10d-4291-b539-b5c7a067cdb0" class="bulleted-list"><li style="list-style-type:disc">Vender, alugar ou sublicenciar material do Pavê.</li></ul><ul id="217b04c6-c907-4298-9add-bf167978893b" class="bulleted-list"><li style="list-style-type:disc">Reproduzir, duplicar ou copiar material do Pavê.</li></ul><ul id="b6e0d8e3-9693-47d1-841c-fd45d5c99628" class="bulleted-list"><li style="list-style-type:disc">Redistribuir conteúdo do Pavê.</li></ul><p id="ec9aa44a-d3ac-487e-8555-da6aea29fc23" class="">Este Contrato terá início na data de hoje.</p><p id="5c9ef8be-dc14-479a-a75d-6d8d36631f86" class="">Partes deste aplicativo oferecem uma oportunidade para os usuários postarem e trocarem opiniões e informações em determinadas áreas do site. O Pavê não filtra, edita, publica ou revisa Comentários antes de sua presença no site. Comentários não refletem as opiniões do Pavê, de seus agentes e/ou afiliados. Comentários refletem as opiniões e opiniões da pessoa que posta suas visões e opiniões. Na medida permitida pelas leis aplicáveis, o Pavê não será responsável pelos Comentários ou por qualquer responsabilidade, danos ou despesas causadas e/ou sofridas como resultado do uso e/ou publicação e/ou aparência dos Comentários neste site.</p><p id="18d83515-79d9-450c-aca5-5fc056bd089f" class="">O Pavê reserva-se o direito de monitorar todos os Comentários e remover qualquer Comentário que possa ser considerado inadequado, ofensivo ou que viole estes Termos e Condições.</p><p id="c93d5f1c-fcf3-42e3-b60c-89452a80bd44" class="">Você garante e representa que:</p><ul id="9edfc6cf-019e-4691-9916-50c2e4ff3be7" class="bulleted-list"><li style="list-style-type:disc">Você tem o direito de postar os Comentários em nosso App e tem todas as licenças e consentimentos necessários para fazê-lo;</li></ul><ul id="ef200b11-1fb6-4c3b-ab4a-596d28be379d" class="bulleted-list"><li style="list-style-type:disc">Os Comentários não invadem qualquer direito de propriedade intelectual, incluindo, sem limitação, direitos autorais, patentes ou marca registrada de terceiros;</li></ul><ul id="1c5e8d8f-d11d-464a-a49c-113dbec13370" class="bulleted-list"><li style="list-style-type:disc">Os Comentários não contêm material difamatório, calunioso, ofensivo, indecente ou ilegal que seja uma invasão de privacidade.</li></ul><ul id="6bb15b6f-9d00-4934-a6c5-c7998a7d1372" class="bulleted-list"><li style="list-style-type:disc">Os Comentários não serão usados para solicitar ou promover negócios, atividades comerciais ou atividades ilegais.</li></ul><p id="104f3951-37b2-49dc-aad0-7f19ac4a21e2" class="">Você concede ao Pavê uma licença não exclusiva para usar, reproduzir, editar e autorizar outros a usar, reproduzir e editar quaisquer de seus Comentários em qualquer forma e em todos os formatos ou mídias.</p><p id="c9d8392d-8fd6-4751-9a60-4fe52866cfab" class=""><strong>Hiperlink para o nosso App:</strong></p><p id="1abec2ad-62f6-4692-a7d3-4af0630ae823" class="">As seguintes organizações podem vincular-se ao nosso App sem aprovação prévia por escrito:</p><ul id="61074fca-3d1a-44fd-b245-e6cae1cc5ec3" class="bulleted-list"><li style="list-style-type:disc">Órgãos governamentais;</li></ul><ul id="5ef5f50a-2042-4e69-af50-e22016995367" class="bulleted-list"><li style="list-style-type:disc">Mecanismos de busca;</li></ul><ul id="0e59e465-01e2-4b8b-9a5d-132aee0ea632" class="bulleted-list"><li style="list-style-type:disc">Organizações de notícias;</li></ul><ul id="0fae1a90-87a4-4476-9889-c29d455f6fa6" class="bulleted-list"><li style="list-style-type:disc">Distribuidores de diretórios online podem vincular-se ao nosso App da mesma forma que hiperlinkam para os sites de outras empresas listadas; e</li></ul><ul id="4201b70e-b1df-4924-8bad-7a874d9aa67b" class="bulleted-list"><li style="list-style-type:disc">Empresas Credenciadas em Todo o Sistema, exceto organizações sem fins lucrativos que solicitam, shoppings de caridade e grupos de arrecadação de fundos de caridade que não podem hiperlinkar para o nosso site.</li></ul><p id="0746e992-2deb-4b76-b5ac-86ae068a5324" class="">Essas organizações podem vincular-se à nossa página inicial, a publicações ou a outras informações do App, desde que o link: (a) não seja de maneira alguma enganoso; (b) não implique falsamente patrocínio, endosso ou aprovação da parte vinculante e de seus produtos e/ou serviços; e (c) se encaixe no contexto do site da parte vinculante.</p><p id="cf858651-68be-4438-a2f3-428606cf3745" class="">Podemos considerar e aprovar outras solicitações de link dos seguintes tipos de organizações:</p><ul id="0f8cb61c-e6ca-4ada-8e52-7fd8a9948c9b" class="bulleted-list"><li style="list-style-type:disc">Fontes de informações sobre consumidores e/ou empresas amplamente conhecidas;</li></ul><ul id="efdf45b6-a350-4ef0-bc53-31255154935e" class="bulleted-list"><li style="list-style-type:disc">Sites comunitários ponto com;</li></ul><ul id="2c8cb747-f220-4a91-93b1-23055be23b71" class="bulleted-list"><li style="list-style-type:disc">Associações ou outros grupos que representam instituições de caridade;</li></ul><ul id="f3f53378-a1e9-436e-98c1-4759b065b239" class="bulleted-list"><li style="list-style-type:disc">Distribuidores de diretórios online;</li></ul><ul id="fac76dd5-e618-4e23-9b19-e3810560e611" class="bulleted-list"><li style="list-style-type:disc">Portais da Internet;</li></ul><ul id="6cca3814-fc0b-43da-9e09-fcfc62bfb20c" class="bulleted-list"><li style="list-style-type:disc">Empresas de contabilidade, direito e consultoria; e</li></ul><ul id="40ff05b4-da31-4cf2-b130-35c03fdfdb48" class="bulleted-list"><li style="list-style-type:disc">Instituições educacionais e associações comerciais.</li></ul><p id="498a49c7-a015-48b2-bd67-4a6e758e7050" class="">Aprovaremos solicitações de link dessas organizações se decidirmos que: (a) o link não nos faria parecer desfavoráveis a nós mesmos ou aos nossos negócios credenciados; (b) a organização não tem nenhum registro negativo conosco; (c) o benefício para nós da visibilidade do hiperlink compensa a ausência do Pavê; e (d) o link está no contexto de informações gerais sobre recursos.</p><p id="a23cdf2d-8ae8-41d8-a6d3-f1ee107dfabd" class="">Essas organizações podem vincular-se ao nosso App, desde que o link: (a) não seja de maneira alguma enganoso; (b) não implique falsamente patrocínio, endosso ou aprovação da parte vinculante e de seus produtos ou serviços; e (c) se encaixe no contexto do site da parte vinculante.</p><p id="171d98a4-92b7-42e1-a590-cb13904e5cb1" class="">Se você é uma das organizações listadas no parágrafo 2 acima e está interessado em vincular-se ao nosso App, você deve nos informar enviando um e-mail para o Pavê. Inclua seu nome, o nome de sua organização, informações de contato, bem como a URL do seu site, uma lista de quaisquer URLs dos quais você pretende vincular-se ao nosso App e uma lista dos URLs em nosso site para os quais você gostaria de vincular-se. Aguarde 2-3 semanas para uma resposta.</p><p id="e0a261d0-4af3-4b6a-9fc5-2dadf4ed97a5" class="">Organizações aprovadas podem vincular-se ao nosso App da seguinte forma:</p><ul id="1d634362-2556-4759-8e7e-8f4348dfc2f5" class="bulleted-list"><li style="list-style-type:disc">Usando nosso nome corporativo; ou</li></ul><ul id="d0ba8af8-3798-4239-9a6e-787a6d47e977" class="bulleted-list"><li style="list-style-type:disc">Usando o localizador de recursos uniforme ao qual está vinculado; ou</li></ul><ul id="2b4ffd64-4c9e-431e-b705-b63adf5f7317" class="bulleted-list"><li style="list-style-type:disc">Usando qualquer outra descrição do nosso App vinculado que faça sentido no contexto e formato do conteúdo no site da parte vinculante.</li></ul><p id="bc6fd88a-c07a-46ae-85c9-c55a1279a0f9" class="">Não será permitido o uso do logotipo ou de outras obras de arte do Pavê para vinculação, exceto mediante acordo de licença de marca registrada.</p><p id="9b77530b-e490-41ba-a335-c996f19a857d" class=""><strong>iFrames:</strong></p><p id="633f3e77-6202-4bc6-b992-91ed308aaeb5" class="">Sem aprovação prévia e permissão por escrito, você não pode criar frames em torno de nossas páginas da Web que alterem de alguma forma a apresentação visual ou a aparência do nosso App.</p><ul id="1938b9d8-a568-46a4-bbd6-db741dbc081c" class="bulleted-list"><li style="list-style-type:disc">*Responsabilidade por Conteúdo:**</li></ul><p id="68591847-eea8-4cf8-9ce4-b8d5eb8bc991" class="">Não seremos responsáveis por qualquer conteúdo que apareça em seu App. Você concorda em nos proteger e nos defender contra todas as reivindicações que surgem em seu App. Nenhum link(s) deve aparecer em qualquer site que possa ser interpretado como difamatório, obsceno ou criminoso, ou que infrinja, viole de outra forma ou advogue a infração ou outra violação dos direitos de terceiros.</p><p id="05e87471-5483-479b-a0d5-3a67ba9ea4da" class=""><strong>Reserva de Direitos:</strong></p><p id="f416d4b3-e8b9-4598-aa62-d7d1cd350e4f" class="">Reservamo-nos o direito de solicitar que você remova todos os links ou qualquer link específico para o nosso App. Você concorda em remover imediatamente todos os links para o nosso App mediante solicitação. Também nos reservamos o direito de alterar estes termos e condições e a política de vinculação a qualquer momento. Ao continuar a vincular-se ao nosso App, você concorda em ficar vinculado e seguir estes termos e condições de vinculação.</p><p id="38a48ffb-8b7d-4918-af31-0c7136d568e7" class=""><strong>Remoção de links do nosso App:</strong></p><p id="798df847-3eb9-43ed-883d-75df95ae6f51" class="">Se você encontrar algum link em nosso App que seja ofensivo por qualquer motivo, sinta-se à vontade para entrar em contato e nos informar a qualquer momento. Consideraremos solicitações de remoção de links, mas não somos obrigados a fazê-lo ou a responder diretamente a você.</p><p id="409a6c8f-6513-4e25-ae3b-a0d509d7e296" class="">Não garantimos que as informações neste site estão corretas, não garantimos sua completude ou precisão; nem prometemos garantir que o site permanecerá disponível ou que o material no site será mantido atualizado.</p><p id="43827b67-605e-4271-b769-c4fd628f1a85" class=""><strong>Isenção de Responsabilidade:</strong></p><p id="129f3ae0-af89-4c93-9079-4d41649687e6" class="">Até o limite máximo permitido pela lei aplicável, excluímos todas as representações, garantias e condições relacionadas ao nosso App e ao uso deste site. Nada nesta renúncia irá:</p><ul id="e3c9b50e-0e92-4f7c-bd63-757d1775e3ee" class="bulleted-list"><li style="list-style-type:disc">limitar ou excluir nossa ou sua responsabilidade por morte ou lesão pessoal;</li></ul><ul id="e2820582-c3d2-428d-9797-d219bf5a9013" class="bulleted-list"><li style="list-style-type:disc">limitar ou excluir nossa ou sua responsabilidade por fraude ou representação fraudulenta;</li></ul><ul id="46ed2fc7-1764-48c4-b95f-53e733da9c45" class="bulleted-list"><li style="list-style-type:disc">limitar qualquer uma de nossas ou suas responsabilidades de maneira que não seja permitida pela lei aplicável; ou</li></ul><ul id="5d9914d7-9ab0-4838-bc5d-faf806fdbf56" class="bulleted-list"><li style="list-style-type:disc">excluir qualquer uma de nossas ou suas responsabilidades que não possam ser excluídas sob a lei aplicável.</li></ul><p id="402ddd5a-b812-4603-a123-cea7950bba7e" class="">As limitações e proibições de responsabilidade estabelecidas nesta Seção e em outros lugares desta renúncia: (a) estão sujeitas ao parágrafo anterior; e (b) regem todas as responsabilidades decorrentes da renúncia, incluindo responsabilidades decorrentes em contrato, em delito e por violação do dever estatutário.</p><p id="7066f968-b818-479e-bd45-dedc8736aeab" class="">Desde que o site e as informações e serviços no site sejam fornecidos gratuitamente, não seremos responsáveis por qualquer perda ou dano de qualquer natureza.</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
